@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+
+
+body
+    margin: 0
+    font-family: 'Inter', sans-serif
+    max-width: 100%
+    overflow-x: hidden
+    font-size: 18px
+    line-height: 150%
+    background-color: $main
+    color: $textDark
+    position: relative
+    @include media-tablet
+      font-size: 12px
+      line-height: 150%
+      font-weight: 400
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  padding: 0
+  margin: 0
+  text-transform: uppercase
+  font-family: 'Viaoda Libre', cursive
+
+h1
+  font-size: 107px
+  line-height: 108%
+  @include media-tablet
+    font-size: 40px
+    line-height: 108%
+
+h2
+  font-size: 50px
+  line-height: 120%
+  font-weight: 400
+  @include media-tablet
+    font-size: 22px
+    line-height: 120%
+
+h3
+  font-size: 18px
+  line-height: 120%
+  @include media-tablet
+    font-size: 12px
+    line-height: 120%
+
+p
+  padding: 0
+  margin: 0
+
+img
+    max-width: 100%
+
+
+.iti
+  width: 100%
+  margin-bottom: 36px
+
+.iti__flag
+  background-image: url("../images/dest/flags.png")
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    .iti__flag
+      background-image: url("../images/dest/flags@2x.png")

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/css/intlTelInput.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/intlTelInput.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+
+</head>
+<body>
+  <section class="quiz" id="quiz">
+        <div class="wrapper">
+          <div class="quiz__content">
+            <div class="quiz__bar progress__container">
+              <div class="progress" id="progress"></div>
+              <div class="circle active"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <h3 class="quiz__title">Подбор недвижимости в Дубае</h3>
+            <form class="form__form" id="form" action="test.php" method="post">
+              <input class="form__input" type="text" id="name-form" name="name" placeholder="Имя">
+              <input class="form__input" type="tel" name="phone" id="phone-form" placeholder="(000) 000-00-00">
+              <input class="form__input hide" type="tel" name="hiden" id="hiden-form">
+              <input class="form__input" type="email" id="email-form" name="email" placeholder="Email">
+              <select class="form__input" name="propName">
+                <option value="default">Выберите Комплекс </option>
+                <option value="Cavalli Couture">Cavalli Couture</option>
+                <option value="Burj Binghatti">Burj Binghatti</option>
+                <option value="Zuha Island">Zuha Island</option>
+                <option value="Elegance Tower">Elegance Tower</option>
+                <option value="Safa One">Safa One</option>
+                <option value="Chic Tower">Chic Tower</option>
+                <option value="The Cove">The Cove</option>
+                <option value="Seascape">Seascape</option>
+                <option value="Orla Dorchester">Orla Dorchester</option>
+                <option value="Bluewaters Bay">Bluewaters Bay</option>
+                <option value="Six Senses">Six Senses</option>
+                <option value="Sobha SeaHaven">Sobha SeaHaven</option>
+              </select>
+              <p class="form__policy">Отправляя данные вы соглашаетесь с <a class="form__link" href="/policy">политикой конфиденциальности</a></p>
+              <button class="form__submit" type="submit" disabled>Бесплатная консультация</button>
+            </form>
+          </div>
+          <div class="quiz__slider">
+            <div class="quiz__slide"></div>
+          </div>
+        </div>
+      </section>
+
+  <script>
+
+  </script>
+</body>
+</html>

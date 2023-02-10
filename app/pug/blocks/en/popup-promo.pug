@@ -1,0 +1,35 @@
+.popup-promo#popup-promo
+  .project-popup__bg
+  .wrapper
+    img.popup-promo__bg.popup-promo__bg-left(src="images/dest/popup-promo-bg-left.webp")
+    img.popup-promo__bg.popup-promo__bg-right(src="images/dest/popup-promo-bg-right.webp")
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")
+    .popup-promo__content
+      p.popup-promo__title GET ACCESS
+        br
+        |TO PRIVATE SALE
+      form.popup-promo__form(action="php/bitrix-subscribe.php" method="post")
+        input.form__input.popup-promo__input(type="text" id="name-popup" name="name" placeholder="Name")
+        input.form__input.popup-promo__input(type="tel" name="phone" id="phone-popup" placeholder="(000) 000-00-00")
+        input.form__input.popup-promo__input(type="tel" class="hide" name="hiden" id="hiden-popup")
+        input.form__input.popup-promo__input(type="email" id="email-popup" name="email" placeholder="Email")
+        select.form__input(name="propName")
+          option(value="default") Choose property
+          option(value="Cavalli Couture") Cavalli Couture
+          option(value="Burj Binghatti") Burj Binghatti
+          option(value="Zuha Island") Zuha Island
+          option(value="Elegance Tower") Elegance Tower
+          option(value="Safa One") Safa One
+          option(value="Chic Tower") Chic Tower
+          option(value="The Cove") The Cove
+          option(value="Seascape") Seascape
+          option(value="Orla Dorchester") Orla Dorchester
+          option(value="Bluewaters Bay") Bluewaters Bay
+          option(value="Six Senses") Six Senses
+          option(value="Sobha SeaHaven") Sobha SeaHaven
+        p.form__policy.popup-promo__policy By sending data, you agree 
+          a.form__link.popup-promo__link(href="/policy") with the Privacy Policy
+        button.form__submit.popup-promo__submit(type="submit" disabled) Subscribe
+      //- img.popup-promo-img(src="images/dest/popup-promo.webp")
+    

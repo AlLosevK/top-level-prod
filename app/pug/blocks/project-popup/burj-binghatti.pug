@@ -1,0 +1,46 @@
+.project-popup
+  .project-popup__bg
+  .popup
+    .popup__content
+      h2.popup__title Burj Binghatti Jacob & Co Residences
+      p.popup__descr Представьте, что вы живете среди облаков на вершине одной из самых высоких гипербашен в мире. Нарушайте границы и бросайте вызов немыслимому, Резиденции Burj Binghatti Jacob & Co полностью переосмысливают понятие роскошного современного образа жизни в мегаполисе, предлагая безупречную, высококлассную индивидуальную жизнь, созданную исключительно для элиты.
+      .popup__benefits
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Рестораны
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Тренажерный зал
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Детская игровая площадка
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Парки и зоны отдыха
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Рестораны
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Торговые точки
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Супермаркет
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Плавательный бассейн
+      .popup__map
+        script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee645fdc801e68e9f8a9095ce1bd59b02ec2f4351a03553e363507d514e8bed6&width=100%25&height=240&lang=ru_RU&scroll=true')
+    .popup__promo
+      .popup__promo-slider
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-1.webp" alt="Burj Binghatti слайд-1")
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-3.webp" alt="Burj Binghatti слайд-3")
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-4.webp" alt="Burj Binghatti слайд-4")
+      p.popup__promo-title УСПЕЙТЕ КУПИТЬ
+      .popup__promo-timer#timer 10:00:00
+      a.popup__promo-btn(href="#form") бесплатная консультация
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")

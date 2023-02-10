@@ -1,0 +1,59 @@
+.project-popup
+  .project-popup__bg
+  .popup
+    .popup__content
+      h2.popup__title Palm Beach Tower
+      p.popup__descr Все апартаменты в Palm Beach Towers, будь то с одной, двумя, тремя, четырьмя спальнями или пентхаус, предлагает залитые солнцем пространства, исключительные кухни и потрясающую сантехнику и отделку. Это означает, что каждое мгновение, которое вы проводите дома, просто идеально, будь то развлечения в просторной гостиной и столовой или отдых, погруженный в легкую и воздушную эстетику.
+      p.popup__descr Palm Beach Towers расположен на въезде в Пальму Джумейра, прямо в центре одного из самых захватывающих и оживленных районов города. Насладитесь свободой солнечной прогулки по некоторым из самых известных ресторанов или проведите день за покупками в магазинах роскошных торговых марок, которые вы любите.
+      .popup__benefits
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Зона для занятия йогой
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Тренажерный зал
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Детская площадка
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Открытый пейзажный бассейн
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr СПА
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Частный пляж
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Прибрежный парк и набережная
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Причал для лодки
+      .popup__map
+        script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee645fdc801e68e9f8a9095ce1bd59b02ec2f4351a03553e363507d514e8bed6&width=100%25&height=240&lang=ru_RU&scroll=true')
+    .popup__promo
+      .popup__promo-slider
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/palm-beach/slide-1.webp" alt="Palm Beach Tower слайд-1")
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/palm-beach/slide-2.webp" alt="Palm Beach Tower слайд-2")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-3.webp" alt="Palm Beach Tower слайд-3")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-4.webp" alt="Palm Beach Tower слайд-4")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-5.webp" alt="Palm Beach Tower слайд-5")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-6.webp" alt="Palm Beach Tower слайд-6")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-7.webp" alt="Palm Beach Tower слайд-7")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-8.webp" alt="Palm Beach Tower слайд-8")
+        //- picture.popup__promo-slide
+        //-   img(src="images/dest/project-popup/palm-beach/slide-9.webp" alt="Palm Beach Tower слайд-9")
+      p.popup__promo-title УСПЕЙТЕ КУПИТЬ
+      .popup__promo-timer#timer 10:00:00
+      a.popup__promo-btn(href="#form") бесплатная консультация
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")

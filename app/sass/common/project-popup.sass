@@ -1,0 +1,277 @@
+.project-popup
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1000
+  overflow: hidden
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  display: none
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: $textDark
+    opacity: .3
+
+.popup
+  z-index: 1050
+  position: relative
+  width: 91%
+  max-width: 1312px
+  height: 90vh
+  margin: 0 auto
+  display: grid
+  grid-template-columns: auto 46.41%
+  &-promo
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 1000
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    &.active
+      display: flex
+    .wrapper
+      height: auto
+      width: 70vw
+      background-color: #fff
+      max-height: 80vh
+      position: relative
+      overflow: hidden
+    &__bg
+      position: absolute
+      z-index: 1050
+      &-left
+        bottom: 0
+        left: 0
+        width: calc(223 / 1012) * 100%
+        height: calc(335 / 518) * 100%
+      &-right
+        top: 15%
+        right: 0
+        width: calc(191 / 1012) * 100%
+        height: calc(345 / 518) * 100%
+    &__content
+      width: 100%
+      max-width: 600px
+      margin: 0 auto
+      height: 100%
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      padding: 76px 0 86px
+      z-index: 1100
+      position: relative
+      overflow: auto
+    &__title
+      font-family: 'Viaoda Libre', cursive
+      font-weight: 400
+      font-size: 45px
+      line-height: 120%
+      text-transform: uppercase
+      text-align: center
+    &__form
+      flex-grow: 3
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    .popup-promo__input
+      color: $textDark
+      margin-bottom: 10px
+    &__policy
+      margin-bottom: 53px
+  &__content
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 40px
+    background-color: #fff
+    max-height: 708px
+    overflow: auto
+    // max-width: 703px
+    overflow: auto
+  &__title
+    margin-bottom: 40px
+  &__descr
+    margin-bottom: 30px
+    font-size: 14px
+    line-height: 21px
+  &__benefits
+    margin-bottom: 60px
+    display: grid
+    grid-template-columns: repeat(2, 50%)
+    grid-template-rows: auto
+    gap: 20px 28px
+    &-item
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+    &-icon
+      width: 43.7px
+      height: 36px
+      margin-right: 15px
+    &-descr
+      font-weight: 300
+      font-size: 14px
+      line-height: 21px
+  &__map
+    width: 100%
+    min-height: 240px
+    background-image: url('../images/dest/popup-map.webp')
+    background-size: cover
+    background-repeat: no-repeat
+  &__promo
+    padding: 94px 40px 40px
+    background-color: $blue
+    color: $bronze
+    max-height: 708px
+    display: grid
+    grid-template-rows: minmax(auto, 410px) 24px 86px 56px
+    grid-template-columns: 100%
+    &-slider
+      grid-row: 1/2
+      margin-bottom: 20px
+      img
+        max-height: 400px
+    &-title
+      font-size: 16px
+      line-height: 24px
+      text-transform: uppercase
+      grid-row: 2/3
+    &-timer
+      font-size: 66.6667px
+      line-height: 130%
+      font-family: "Viaoda Libre",cursive
+      grid-row: 3/4
+    &-btn
+      width: 100%
+      display: block
+      border: none
+      font-weight: 500
+      font-size: 16px
+      line-height: 150%
+      text-align: center
+      text-transform: uppercase
+      padding: 16px 0
+      background-color: $bronze
+      color: $blue
+      max-height: 56px
+      grid-row: 4/5
+      &:hover
+        background-color: $bronzeDark
+        color: $bronze
+        text-decoration: none
+  &__nav
+    position: absolute
+    top: 40px
+    right: 0
+    min-width: 100px
+    padding-right: 40px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    z-index: 1500
+    &-close
+      cursor: pointer
+
+  @include media-customMax(1200px)
+    &__benefits
+      grid-template-columns: 100%
+      gap: 15px 15px
+      margin-bottom: 30px
+      &-item
+    &__promo
+      &-timer
+        font-size: 40px
+
+  @include media-tablet
+    grid-template-columns: 100%
+    grid-template-rows: 1fr auto
+    &__benefits
+      grid-template-columns: repeat(2, 50%)
+      gap: 15px 20px
+      margin-bottom: 30px
+    &__promo
+      padding: 40px
+      display: grid
+      grid-template-columns: 53% auto
+      grid-template-rows: auto-fill
+      gap: 20px
+      &-slider
+        grid-column: 1/2
+        grid-row: 1/4
+        margin-bottom: 0
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        justify-content: center
+      &-title
+        grid-column: 2/3
+        grid-row: 1/2
+      &-timer
+        grid-column: 2/3
+        grid-row: 2/3
+      &-btn
+        grid-column: 2/3
+        grid-row: 3/4
+
+
+  @include media-customMax(630px)
+    &__benefits
+      grid-template-columns: 100%
+    &__map
+      display: none
+    &__promo
+      padding: 20px
+      display: grid
+      grid-template-columns: 100%
+      grid-template-rows: auto-fill
+      &-slider
+        display: none
+      &-title
+        grid-column: 1/2
+        grid-row: 1/2
+      &-timer
+        grid-column: 1/2
+        grid-row: 2/3
+      &-btn
+        grid-column: 1/2
+        grid-row: 3/4
+    &-promo
+      .wrapper
+        width: 85vw
+      &__title
+        font-size: 25px
+      &__content
+        width: 80%
+        padding: 70px 0 40px
+      .popup-nav

@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+   block head
+      head
+          meta(charset="utf-8")
+          title Top Level
+          meta(content="width=device-width, initial-scale=1" name="viewport")
+          meta(content="ie=edge" http-equiv="x-ua-compatible")
+          link(rel="stylesheet" href="../css/app.min.css")
+          link(rel='icon' href='images/dest/favicon.ico')
+          link(rel='icon' href='images/dest/icons/header-logo.svg' type='image/svg+xml')
+          link(rel='apple-touch-icon' sizes='180x180' href='images/dest/apple-touch-icon.png')
+          link(rel='icon' type='image/png' sizes='32x32' href='images/dest/favicon-32x32.png')
+          link(rel='icon' type='image/png' sizes='16x16' href='images/dest/favicon-16x16.png')
+          link(rel='manifest' href='images/dest/site.webmanifest')
+          
+      body
+          script(src="https://www.googletagmanager.com/gtag/js?id=G-EBX8MEHXB0" async)
+          script
+            include ga.js
+          script
+            include metrika.js
+          noscript
+            div
+              img(src="https://mc.yandex.ru/watch/92170622" style="position:absolute; left:-9999px;" alt="")
+
+
+      
+          include svg.pug
+          block header
+            include header-en
+
+          block content
+          
+          //- block footer
+          //-   include footer

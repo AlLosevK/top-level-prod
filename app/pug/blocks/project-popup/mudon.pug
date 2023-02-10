@@ -1,0 +1,41 @@
+.project-popup
+  .project-popup__bg
+  .popup
+    .popup__content
+      h2.popup__title Мудон Аль-Раним
+      p.popup__descr Мудон Аль-Раним расположен на расстоянии от всего, но в то же время в пределах пешей досягаемости от многих ключевых пунктов назначения.
+      p.popup__descr Ваша растущая семья нуждается в безопасном и комфортном убежище, где вы могли бы расслабиться в конце каждого дня.
+      p.popup__descr Выбирайте из прекрасно оборудованных таунхаусов с 3 и 4 спальнями, а также таунхаусов предназначенных для семейной жизни.
+      .popup__benefits
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr 2 навеса для автомобилей
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Закрытое, охраняемое пространоство
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Беговые и велосипедные дорожки
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr уличные тренажерные станции
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Водные игровые площадки
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Пышные зеленые парки
+      .popup__map
+        script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A496aa5b6f2652561db13a0c6beb09bb524a002d96e2623eb238e088aef94b052&width=100%25&height=240&lang=ru_RU&scroll=true')
+    .popup__promo
+      .popup__promo-slider
+        picture.popup__promo-slide
+          picture.popup__promo-slide
+            img(src="images/dest/popup-promo-slide.webp" alt="-слайд-1")
+          picture.popup__promo-slide
+            img(src="images/dest/banner-slide-3.webp" alt="-слайд-2")
+      p.popup__promo-title УСПЕЙТЕ КУПИТЬ
+      p.popup__promo-timer#timer
+      a.popup__promo-btn(href="#form") бесплатная консультация
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")

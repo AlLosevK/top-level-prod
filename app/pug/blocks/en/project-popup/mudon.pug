@@ -1,0 +1,41 @@
+.project-popup
+  .project-popup__bg
+  .popup
+    .popup__content
+      h2.popup__title Mudon Al Ranim
+      p.popup__descr Mudon Al Ranim is located some distance from everything, still it’s within a walking distance from many key destinations.
+      p.popup__descr Your growing family requires a safe and comfortable home to relax at the end of each day.
+      p.popup__descr Choose from a wide range of seamlessly equipped 3- and 4-bedroom townhouses including those that have been specifically designed for a family living.
+      .popup__benefits
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Two covered parking spots
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Closed, protected community with excellent facilities
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Jogging track, bicycle track and sports fields
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr open air training stations
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr water playgrounds
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Lush green parks
+      .popup__map
+        script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A496aa5b6f2652561db13a0c6beb09bb524a002d96e2623eb238e088aef94b052&width=100%25&height=240&lang=ru_RU&scroll=true')
+    .popup__promo
+      .popup__promo-slider
+        picture.popup__promo-slide
+          picture.popup__promo-slide
+            img(src="images/dest/popup-promo-slide.webp" alt="-slide-1")
+          picture.popup__promo-slide
+            img(src="images/dest/banner-slide-3.webp" alt="-slide-2")
+      p.popup__promo-title DON’T MISS YOUR CHANCE
+      p.popup__promo-timer#timer
+      a.popup__promo-btn(href="#form") Free consultation
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")

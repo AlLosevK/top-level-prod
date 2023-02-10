@@ -1,0 +1,96 @@
+.form
+  background-image: url('../images/dest/form-bg.webp')
+  background-size: cover
+  background-position: 50% 70%
+  background-repeat: no-repeat
+  padding: 188px 0
+  position: relative
+  .wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $blue
+    opacity: .95
+  &__title
+    font-size: 63.3333px
+    line-height: 120%
+    max-width: 830px
+    text-align: center
+    color: $bronze
+  &__input
+    width: 100%
+    max-width: 657px
+    display: block
+    margin-bottom: 36px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $bronze
+    color: $bronze
+    font-size: 18px
+    line-height: 150%
+    padding: 18px 0
+    &:last-child
+      margin-bottom: 20px
+  &__policy
+    color: $bronze
+    margin-bottom: 74px
+    font-size: 14px
+    line-height: 150%
+  &__link
+    color: $bronze
+    text-decoration: underline
+    &:hover
+      color: $textDark
+  &__submit
+    background-color: $bronze
+    border: none
+    color: $blue
+    padding: 16px 47px
+    font-size: 16px
+    line-height: 150%
+    text-transform: uppercase
+    margin: 0 auto
+    display: block
+    &:hover
+      background-color: $bronzeH
+    &:disabled
+      background-color: #fff
+      border: 1px solid $bronze
+      color: $blue
+      &:hover
+        background-color: #fff
+        border: 1px solid $bronze
+        color: $blue
+
+  @include media-laptop
+    padding: 80px 0
+    &__title
+      font-size: 22px
+      line-height: 120%
+      width: 100%
+    &__input
+      padding: 9px 0
+      margin-bottom: 17px
+      width: 100%
+      font-size: 12px
+      line-height: 150%
+      font-weight: 300
+    &__policy
+      font-size: 10px
+      line-height: 120%
+      margin-bottom: 32px
+    &__submit
+      font-size: 12px
+      line-height: 150%
+      padding: 7.5px 0
+      width: 100%
+      text-align: center

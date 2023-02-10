@@ -1,0 +1,26 @@
+section.form#form
+  .wrapper
+    h2.form__title order a call back
+    .result#result
+    form.form__form#form(action="php/bitrix-main.php" method="post")
+      input.form__input(type="text" id="name-form" name="name" placeholder="Name")
+      input.form__input(type="tel" name="phone" id="phone-form" placeholder="(000) 000-00-00")
+      input.form__input(type="tel" class="hide" name="hiden" id="hiden-form")
+      input.form__input(type="email" id="email-form" name="email" placeholder="Email")
+      select.form__input(name="propName")
+        option(value="default") Choose property
+        option(value="Cavalli Couture") Cavalli Couture
+        option(value="Burj Binghatti") Burj Binghatti
+        option(value="Zuha Island") Zuha Island
+        option(value="Elegance Tower") Elegance Tower
+        option(value="Safa One") Safa One
+        option(value="Chic Tower") Chic Tower
+        option(value="The Cove") The Cove
+        option(value="Seascape") Seascape
+        option(value="Orla Dorchester") Orla Dorchester
+        option(value="Bluewaters Bay") Bluewaters Bay
+        option(value="Six Senses") Six Senses
+        option(value="Sobha SeaHaven") Sobha SeaHaven
+      p.form__policy By sending data, you agree with the 
+        a.form__link(href="/policy") Privacy Policy
+      button.form__submit(type="submit" disabled) Free consultation

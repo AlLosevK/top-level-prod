@@ -1,0 +1,90 @@
+.about
+  padding: 180px 0 320px
+  color: $textDark
+  .wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+  &__img
+    width: 606px
+    margin-right: 50px
+  &__row
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    width: 100%
+    grid-column: 1/3
+    &:nth-child(2)
+      grid-column: 2/3
+      display: grid
+      grid-template-columns: 288px 288px
+      grid-template-rows: 60px 360px
+      gap: 40px
+      align-items: flex-start
+    &:nth-child(4)
+      .about__descr
+        width: 306px
+      .about__img
+        width: 959px
+        margin: 0
+  &__title
+    color: $bronzeDark
+    width: 100%
+    grid-column: 1/3
+  &__descr
+    color: $textDark
+    width: 288px
+    white-space: pre-wrap
+    font-size: 16px
+    line-height: 24px
+    span
+      margin-top: 24px
+      display: block
+  &__promo
+    font-size: 40px
+    line-height: 130%
+    text-align: center
+    font-weight: 400
+    font-family: 'Viaoda Libre', cursive
+    padding: 50px 0
+    border-top: 1px solid $bronze
+    border-bottom: 1px solid $bronze
+    margin: 80px 0
+
+  @include media-laptop
+    padding: 80px 0 60px
+    .wrapper
+      grid-template-columns: 100%
+    &__row
+      &:nth-child(2)
+        grid-column: 1/2
+        grid-row: 1/2
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, auto)
+        gap: 20px
+      &:nth-child(4)
+        .about__descr
+          width: 100%
+        .about__img
+          width: 100%
+          margin: 20px 0
+    &__img
+      width: 100%
+      grid-column: auto
+      grid-row: 2/3
+      margin: 20px auto 0
+    &__title
+      grid-column: auto
+    &__descr
+      font-size: 12px
+      line-height: 150%
+      width: auto
+    &__promo
+      margin: 20px 0
+      padding: 16px 0
+      font-size: 18px
+      line-height: 130%
+      width: 100%

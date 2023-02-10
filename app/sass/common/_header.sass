@@ -1,0 +1,236 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: transparent
+  z-index: 500
+  &-mob
+    display: none
+  &-desk
+    width: 100%
+  &.active
+    background-color: $main
+    border-bottom: 1px solid $bronze
+    .header__link
+      color: $textDark
+  .wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 13px 0
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+    gap: 20px
+  &__contacts
+    li
+      &:nth-child(2)
+        a
+          text-decoration: underline
+      span
+        padding: 0 2px
+        color: $bronze
+  &__link
+    color: #fff
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    &:hover
+      color: $bronze
+
+  @include media-custom(1100px)
+    .wrapper
+      width: 90%
+
+  @include media-customMax(1100px)
+    .icon
+      width: 100%
+      height: 100%
+    &.active
+      .header-mob__phone-icon
+        stroke: $bronzeDark
+      .header-mob__menu-icon
+        stroke: $bronzeDark
+    &-desk
+      display: none
+    &-mob
+      display: block
+      position: relative
+      &.active
+        .header-mob__abs
+          display: flex
+      &__phone
+        width: 21px
+        height: 21px
+        stroke: #fff
+        &:hover
+           animation: 3s infinite alternate wiggle
+      &__logo
+        width: 30px
+        height: 30px
+      &__menu
+        width: 24px
+        height: 18px
+        stroke: #fff
+        cursor: pointer
+        &:hover
+           animation: 3s infinite alternate swing
+      &__abs
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        padding: 40px
+        padding-bottom: 80px
+        background-color: $blue
+        display: -webkit-flex
+        display: -ms-flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: stretch
+        display: none
+        &-logo
+          width: 83px
+          height: 31px
+          font-size: 31px
+        &-list
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          justify-content: flex-start
+          align-items: center
+          padding: 0
+          margin: 0
+        &-item
+          list-style: none
+          width: 100%
+          text-align: left
+          padding: 12px 0
+          position: relative
+          border-bottom: 1px solid #FFFFFF
+          padding-left: 23px
+          &:before
+            position: absolute
+            top: 25%
+            left: 0
+            font-size: 12px
+            font-family: 'Viaoda Libre', cursive
+            color: $bronze
+            z-index: 5
+          &:nth-child(1)
+            &:before
+              content: '01'
+          &:nth-child(2)
+            &:before
+              content: '02'
+          &:nth-child(3)
+            &:before
+              content: '03'
+          &:nth-child(4)
+            &:before
+              content: '04'
+          &:last-child
+            border: none
+          a
+            font-family: 'Viaoda Libre', cursive
+            font-weight: 400
+            font-size: 18px
+            line-height: 130%
+            color: #fff
+            width: 100%
+            display: block
+            &:hover
+              text-decoration: none
+        &-contacts
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: stretch
+        &-link
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: row
+          justify-content: flex-start
+          align-items: center
+          margin-bottom: 15px
+          &:hover
+            text-decoration: none
+            .header-mob__abs-link-icon
+               animation: 1.5s infinite alternate wiggle
+          &-icon
+            margin-right: 10px
+            &.icon
+              width: 21px
+              height: 21px
+              stroke: #fff
+          p
+            font-size: 14px
+            line-height: 150%
+            font-weight: 200
+            color: #fff
+        &-btn
+          padding: 8px 0
+          text-align: center
+          border: 1px solid $bronze
+          background-color: $blue
+          color: $bronze
+          &:hover
+            background-color: $bronze
+            color: $bronzeDark
+        &-nav
+          position: absolute
+          top: 21px
+          right: 20px
+          width: calc(100% - 40px)
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: row
+          justify-content: flex-end
+          align-items: center
+          z-index: 550
+          height: 24px
+          .icon
+            width: 17px
+            height: 17px
+            cursor: pointer
+            position: absolute
+            top: 0
+            right: 0
+            z-index: 150
+        &-lang
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: row
+          justify-content: center
+          align-items: center
+          color: $bronze
+          z-index: 100
+          a
+            color: $bronze
+          span
+            margin: 0 2px

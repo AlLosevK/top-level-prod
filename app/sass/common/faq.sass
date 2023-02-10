@@ -1,0 +1,133 @@
+.faq
+  padding: 180px 0
+  .wrapper
+    display: grid
+    grid-template-columns: 1fr 2fr
+    gap: 50px
+  &__title
+    color: $bronzeDark
+    width: 400px
+    // font-family: 'Viaoda Libre', cursive
+  &__items
+    color: $textDark
+  &__item
+    padding-bottom: 19px
+    border-bottom: 1px solid $bronze
+    position: relative
+    &:last-child
+      border: none
+    &-bg
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      z-index: 300
+    &.active
+      .faq__a
+        display: block
+  &__q
+    position: relative
+    a
+      position: relative
+      font-size: 24px
+      line-height: 150%
+      text-transform: uppercase
+      padding: 19px 0
+      display: block
+      width: 100%
+      color: $textDark
+      text-decoration: none
+      z-index: 10
+      width: 95%
+      &:hover
+        color: $textDark
+        text-decoration: none
+    &:before
+      content: url('../images/dest/icons/arrow.svg')
+      position: absolute
+      right: 0
+      bottom: 24px
+      z-index: 5
+  &__a
+    display: none
+    margin-bottom: 15px
+
+
+  @include media-tablet
+    &__title
+      width: 60%
+
+  @include media-laptop
+    padding: 80px 0 55px
+    .wrapper
+      grid-template-columns: 100%
+      gap: 10px
+    &__title
+      width: 90%
+      text-align: center
+    &__q
+      padding-left: 43px
+      a
+        font-size: 12px
+        line-height: 120%
+        font-weight: 300
+        padding: 0
+        padding: 18px 0
+        width: 90%
+      &:before
+        content: url('../images/dest/icons/arrow-ddown.svg')
+        bottom: auto
+        top: 30%
+      &:after
+        font-size: 14px
+        height: 100%
+        font-family: 'Viaoda Libre', cursive
+        position: absolute
+        left: 0
+        top: 18px
+        z-index: 5
+    &__a
+      font-size: 10px
+      line-height: 120%
+      font-weight: 300
+      ul
+        padding-left: 12px
+    &__list
+      padding-left: 16px
+    &__item
+      padding: 0
+      &:nth-child(1)
+        .faq__q:after
+          content: '01'
+      &:nth-child(2)
+        .faq__q:after
+          content: '02'
+      &:nth-child(3)
+        .faq__q:after
+          content: '03'
+      &:nth-child(4)
+        .faq__q:after
+          content: '04'
+      &:nth-child(5)
+        .faq__q:after
+          content: '05'
+      &:nth-child(6)
+        .faq__q:after
+          content: '06'
+      &:nth-child(7)
+        .faq__q:after
+          content: '07'
+      &:nth-child(8)
+        .faq__q:after
+          content: '08'
+      &:nth-child(9)
+        .faq__q:after
+          content: '09'
+      &:last-child
+        border-bottom: none
+      &.active
+        padding-bottom: 18px
+        .faq__q
+          &::before
+            transform: rotate(180deg)

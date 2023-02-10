@@ -1,0 +1,58 @@
+header.header
+  .header-desk
+    .wrapper
+      nav.header__nav
+        ul.header__list
+          li
+            a.header__link(href="#benefits") Find a property
+          li
+            a.header__link(href="#projects") Projects
+          li
+            a.header__link(href="#about") About us
+          li
+            a.header__link(href="#faq") FAQ
+      .header__logo
+        +icon("header-logo", "header__logo-icon")
+      .header__contacts
+        ul.header__list
+          li
+            a.header__link(href="tel:+971585835333") +9 (715) 858 35 333
+          li
+            a.header__link(href="#quiz") Find a property
+          li
+            a.header__link(href="index.html") Рус
+            span /
+            a.header__link(href="index-en.html") Eng
+  .header-mob
+    .wrapper
+      a.header-mob__phone(href="#form")
+        +icon('header-mob-phone', 'header-mob__phone-icon')
+      .header-mob__logo
+        +icon("header-logo", "header-mob__logo-icon")
+      .header-mob__menu
+        +icon("header-menu", "header-mob__menu-icon")
+    .header-mob__abs
+      .header-mob__abs-nav
+        .header-mob__abs-lang
+          a.header__link(href="index.html") Рус
+          span /
+          a.header__link(href="index-en.html") Eng
+        +icon("project-popup-close", "header-mob__abs-nav-close")
+      .header-mob__abs-logo
+        +icon('header-mob-logo', 'header-mob__logo-icon')
+      ul.header-mob__abs-list
+        li.header-mob__abs-item
+          a(href="#benefits") Преимущества
+        li.header-mob__abs-item
+          a(href="#projects") Projects
+        li.header-mob__abs-item
+          a(href="#about") About us
+        li.header-mob__abs-item
+          a(href="#faq") FAQ
+      .header-mob__abs-contacts
+        a.header-mob__abs-link(href="tel:+971585835333")
+          +icon('header-mob-phone', 'header-mob__abs-link-icon')
+          p +9 (715) 858 35 333
+        button.header-mob__abs-btn(href="#quiz") Find a property
+        
+        

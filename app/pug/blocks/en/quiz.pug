@@ -1,0 +1,84 @@
+section.quiz#quiz
+  .wrapper
+    .quiz__content
+      .quiz__bar.progress__container
+        .progress#progress
+        .circle.active
+        .circle
+        .circle
+        .circle
+        .circle
+        .circle
+        .circle
+      h3.quiz__title SELECTION OF REAL ESTATE
+      form.quiz__form(action="php/bitrix-quiz.php" method="post")
+        .quiz__form-item.quiz__form-item-active
+          .quiz__q What is your purpose of purchasing the property in the UAE ?
+          p.quiz__a
+            input(type="radio" id="quiz-a1" name='for' value='Для инвестиций')
+            label(for="quiz-a1") Investment
+          p.quiz__a
+            input(type="radio" id="quiz-a2" name='for' value='Для жилья')
+            label(for="quiz-a2") Residence
+        .quiz__form-item
+          .quiz__q What budget do you have ?
+          p.quiz__a
+            input(type="radio" id="quiz-b1" name='price' value='1 000 000')
+            label(for="quiz-b1") 1 000 000 AED
+          p.quiz__a
+            input(type="radio" id="quiz-b2" name='price' value='30 000 000')
+            label(for="quiz-b2") 30 000 000 AED
+          p.quiz__a
+            input(type="radio" id="quiz-b3" name='price' value='100 000 000')
+            label(for="quiz-b3") 100 000 000 AED
+        .quiz__form-item
+          .quiz__q How many rooms would you like to buy?
+          p.quiz__a
+            input(type="radio" id="quiz-с1" name='rooms' value='1-2')
+            label(for="quiz-с1") 1-2
+          p.quiz__a
+            input(type="radio" id="quiz-с2" name='rooms' value='2-5')
+            label(for="quiz-с2") 2-5
+          p.quiz__a
+            input(type="radio" id="quiz-с3" name='rooms' value='5+')
+            label(for="quiz-с3") 5+
+        .quiz__form-item
+          .quiz__q What is your name?
+          .quiz__a
+            input.form__input(type="text" id="name-quiz" name="name" placeholder="Name")
+        .quiz__form-item
+          .quiz__q
+          .quiz__a
+            select.form__input(name="propName")
+              option(value="default") Choose property
+              option(value="Cavalli Couture") Cavalli Couture
+              option(value="Burj Binghatti") Burj Binghatti
+              option(value="Zuha Island") Zuha Island
+              option(value="Elegance Tower") Elegance Tower
+              option(value="Safa One") Safa One
+              option(value="Chic Tower") Chic Tower
+              option(value="The Cove") The Cove
+              option(value="Seascape") Seascape
+              option(value="Orla Dorchester") Orla Dorchester
+              option(value="Bluewaters Bay") Bluewaters Bay
+              option(value="Six Senses") Six Senses
+              option(value="Sobha SeaHaven") Sobha SeaHaven
+        .quiz__form-item
+          .quiz__q How to contact you?
+          .quiz__a
+            //- input.form__input(type="tel" pattern="[0-9]{5, 14}" id="phone" name="phone" placeholder="Номер (мин 5 цифр)")
+            input.form__input(type="email" id="email-quiz" name="email" placeholder="Email")
+            input.form__input.quiz__input(type="tel" name="phone" id="phone-quiz" placeholder="(000) 000-00-00")
+            input.form__input.quiz__input(type="tel" class="hide" name="hiden" id="hiden-quiz")
+        .quiz__form-item
+          .quiz__a
+            p Our managers will contact you shortly
+        .quiz__footer
+          .quiz__logo
+            img(src="images/dest/quiz-logo.webp" alt="Top Level logo")
+          .quiz__nav
+            button.quiz__prev#prev(type="button" data-quizNav="sbmt" disabled)
+            button.quiz__next#next(type="button" data-quizNav="nav") Next
+            button.quiz__next#submit-quiz(type="submit" data-quizNav="sbmt" disabled) Submit
+    .quiz__slider
+      .quiz__slide

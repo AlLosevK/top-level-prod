@@ -1,0 +1,113 @@
+.benefits
+  padding-top: 180px
+  .wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &__title
+    color: $bronzeDark
+    margin-bottom: 93px
+  &__descr
+    color: $textDark
+  &__items
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: 984px
+  &__item
+    display: grid
+    position: relative
+    grid-template-columns: 55px 700px
+    grid-template-rows: 50px 1fr
+    border-bottom: 1px solid $bronze
+    gap: 18px 94px
+    width: 100%
+    padding: 40px 0 20px
+    &-bg
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      z-index: 300
+    &-title
+      font-family: 'Viaoda Libre'
+      font-size: 28px
+      line-height: 150%
+      text-transform: uppercase
+    &.active
+      // .benefits__content
+      //   height: auto
+        // overflow: visible
+      // .benefits__img
+      //   display: block
+    &:nth-child(2)
+      .benefits__img
+        bottom: auto
+        top: -50px
+    &:nth-child(3)
+      .benefits__img
+        bottom: -30px
+    &:nth-child(4)
+      .benefits__img
+        bottom: auto
+        top: -340px
+    &:last-child
+      border-bottom: none
+  &__nmbr
+    font-size: 50px
+    line-height: 100%
+    font-family: 'Viaoda Libre'
+  &__content
+    grid-column: 2/3
+    // height: 0
+    // overflow: hidden
+    display: none
+  &__list
+    padding-left: 20px
+    margin: 0
+    &-item
+      font-size: 16px
+      font-weight: 300
+      line-height: 150%
+      margin-bottom: 14px
+  &__img
+    position: absolute
+    // display: none
+    right: -122px
+    bottom: -30px
+    max-width: 330px
+
+
+  @include media-laptop
+    padding-top: 80px
+    &__title
+      margin-bottom: 36px
+    &__items
+      width: 100%
+    &__item
+      padding: 13px 0
+      grid-template-columns: 20px auto
+      grid-template-rows: 30px 1fr
+      gap: 18px 27px
+      &.active
+        .benefits__img
+          display: none
+      &-title
+        font-size: 16px
+        line-height: 150%
+    &__list
+      &-item
+        font-size: 12px
+        line-height: 120%
+    &__nmbr
+      font-size: 14px
+      line-height: 100%
+    &__img
+      display: none

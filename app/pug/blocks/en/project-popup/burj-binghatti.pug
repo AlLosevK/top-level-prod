@@ -1,0 +1,46 @@
+.project-popup
+  .project-popup__bg
+  .popup
+    .popup__content
+      h2.popup__title Burj Binghatti Jacob & Co Residences
+      p.popup__descr Imagine you live among the clouds on the top of one of the highest hypertowers in the world. Break the limits and challenge the extraordinary. The Burj Binghatti Jacob & Co residences give a completely new meaning to the conception of a modern luxurious lifestyle in the megapolis as they offer a flawless, top-level individual life created exclusively for the the Big League.
+      .popup__benefits
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Restaurants
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr training stations
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Children’s playground
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Parks and recreation
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Restaurants
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Retail outlets
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Supermarket
+        .popup__benefits-item
+          +icon("benefits-icon", "popup__benefits-icon")
+          p.popup__benefits-descr Swimming Pool
+      .popup__map
+        script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee645fdc801e68e9f8a9095ce1bd59b02ec2f4351a03553e363507d514e8bed6&width=100%25&height=240&lang=ru_RU&scroll=true')
+    .popup__promo
+      .popup__promo-slider
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-1.webp" alt="Burj Binghatti slide-1")
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-3.webp" alt="Burj Binghatti slide-3")
+        picture.popup__promo-slide
+          img(src="images/dest/project-popup/burj-binghatti/slide-4.webp" alt="Burj Binghatti slide-4")
+      p.popup__promo-title DON’T MISS YOUR CHANCE
+      .popup__promo-timer#timer 10:00:00
+      a.popup__promo-btn(href="#form") Free consultation
+    .popup__nav
+      +icon("project-popup-close", "popup__nav-close")
